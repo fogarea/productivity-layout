@@ -1,0 +1,54 @@
+@use "../abstract" as *;
+.icon {
+	cursor: pointer;
+}
+
+.icon--play {
+	background-image: url("./../assets/img/icons/play-icon.svg");
+	width: 18px;
+	height: 19px;
+}
+
+.icon-square {
+	width: 50px;
+	height: 50px;
+	border-radius: 19px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	&--purple {
+		background-color: $color-purple;
+	}
+
+	&--yellow {
+		background-color: $color-yellow;
+	}
+
+	&--red {
+		background-color: $color-red;
+	}
+
+	&--blue {
+		background-color: $color-blue;
+	}
+}
+
+.icon--arrow {
+	background-image: url("./../assets/svg/arrow.svg");
+	@include icon-size(13.12px);
+}
+
+.icon--wave {
+	background-image: url("./../assets/svg/wave.svg");
+	@include icon-size(19.68px);
+}
+
+.icon--heart {
+	background-image: url("./../assets/svg/heart.svg");
+	@include icon-size(17.49px);
+}
+
+.icon--time {
+	background-image: url("./../assets/svg/time.svg");
+	@include icon-size(15.3px);
+}

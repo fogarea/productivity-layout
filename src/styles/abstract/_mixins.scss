@@ -1,0 +1,21 @@
+@mixin font($size, $height: $size, $weight: bold, $style: normal){
+	font-size: $size;
+	font-style: $style;
+	font-weight: $weight;
+	line-height: $height;
+}
+
+@mixin columns($width) {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	>* {
+		flex-basis: $width;
+	}
+}
+
+@mixin icon-size($width, $height: 18px) {
+	background-repeat: no-repeat;
+	width: $width;
+	height: $height;
+}

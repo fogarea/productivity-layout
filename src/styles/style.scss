@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import "base/normalize";
 
-.html {
-  font-size: 10px;
-}
+// Base
+@import "base";
 
-.body {
-  font-family: 'Open Sans', Verdana, sans-serif;
-  font-size: 1.6rem;
-}
+// Layouts
+@import "layouts";
+
+// Components
+@import "components";

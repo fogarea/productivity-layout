@@ -1,0 +1,28 @@
+@use "../abstract" as *;
+
+.tags {
+	display: flex;
+	>* {
+		margin-right: 7px;
+	}
+}
+
+.tag {
+	border-radius: 90px;
+	padding: 0 14px;
+	@include font(1.3rem, 2.8rem, normal);
+
+	&--bordered {
+		border: 1px solid $color-border-btn;
+	}
+
+	&--selected {
+		background-color: $color-primary;
+		border: 1px solid $color-primary;
+		color: $color-light;
+	}
+
+	&--colored {
+		background-color: $color-tag;
+	}
+}

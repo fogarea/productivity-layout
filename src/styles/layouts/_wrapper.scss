@@ -1,0 +1,6 @@
+@use "../abstract" as *;
+
+.wrapper {
+	max-width: $width-container;
+	margin: 0 auto;
+}

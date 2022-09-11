@@ -1,0 +1,43 @@
+@use "../abstract" as *;
+
+.button {
+	padding: 11px 25px 13px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: $font-family-primary;
+	@include font(1.6rem, 2.2rem, normal);
+	@extend %transition;
+
+	&--bordered{
+		background: $color-light;
+		border: 1px solid $color-border-btn;
+		color: $color-text-btn;
+
+		&:hover {
+			background: $color-hovered-btn;
+			border-color: $color-hovered-btn;
+		}
+	}
+
+	&--colored{
+		background: $color-primary;
+		border: 1px solid $color-primary;
+		color: $color-light;
+
+		&:hover {
+			background: $color-secondary;
+			border-color: $color-secondary;
+		}
+	}
+}
+
+.link-button {
+	display: inline-flex;
+	align-items: center;
+	color: $color-primary;
+	font-family: $font-family-secondary;
+
+	&__text {
+		margin-left: 9px;
+	}
+}

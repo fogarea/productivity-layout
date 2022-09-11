@@ -1,0 +1,42 @@
+@use "../abstract" as *;
+
+.strategies {
+	padding: 30px 0;
+	&__title {
+		margin: 0 0 14px;
+	}
+
+	&__desc {
+		margin: 0 0 24px;
+	}
+
+	&__tags {
+		margin-bottom: 31px;
+	}
+
+	&__content {
+		>* {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
+.strategy {
+	@extend %block-shadowed;
+	&__title {
+		padding: 0 33px ;
+	}
+
+	&__tags {
+		padding: 0 33px 26px;
+	}
+}
+
+.block-shadowed {
+}
+
+
+
+.block-shadowed--large {
+}
