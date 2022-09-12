@@ -1,0 +1,35 @@
+@use "../abstract" as *;
+
+$employee-card-gap: 32px;
+
+.employee {
+	display: flex;
+	@extend %block-shadowed;
+	padding: 35px;
+	width: calc(30% - $employee-card-gap);
+	position: relative;
+	&__job-title {
+		@include font(1.4rem, $weight: normal, $height: 2.6rem);
+	}
+	&__mail {
+		@include font(1.4rem, $weight: normal);
+		color: $color-link;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__img {
+		position: absolute;
+		width: 98px;
+		height: 98px;
+		border-radius: 50%;
+		right: -$employee-card-gap;
+		top: 20px;
+		box-shadow: 0  15px 30px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.employee__wrapper {
+	padding-right: $employee-card-gap;
+}

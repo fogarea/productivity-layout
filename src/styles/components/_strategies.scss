@@ -21,22 +21,27 @@
 	}
 }
 
-
 .strategy {
 	@extend %block-shadowed;
+	transition: all 0.3s ease-out 0s;
+	cursor: pointer;
 	&__title {
+		transition: all 0.3s ease-out 0s;
 		padding: 0 33px ;
+
 	}
 
+	&:hover {
+		-webkit-transform: scale(1.02);
+		-ms-ransform: scale(1.02);
+		transform: scale(1.02);
+		.strategy__title {
+			color: $color-primary;
+		}
+
+	}
 	&__tags {
-		padding: 0 33px 26px;
+		padding: 28px 33px 26px;
 	}
-}
 
-.block-shadowed {
-}
-
-
-
-.block-shadowed--large {
 }

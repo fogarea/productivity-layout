@@ -52,3 +52,25 @@
 	background-image: url("./../assets/svg/time.svg");
 	@include icon-size(15.3px);
 }
+
+.icon-circle {
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	&--colored {
+		background-color: $color-light;
+	}
+}
+
+.icon--phone {
+	background-image: url("./../assets/svg/phone.svg");
+	@include icon-size(12px, 12px);
+}
+
+.icon--mail {
+	background-image: url("./../assets/svg/mail.svg");
+	@include icon-size(11px, 7px);
+}

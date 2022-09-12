@@ -7,46 +7,21 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-
 	&__content {
 		padding-right: 65px;
 	}
-
 	&__title {
 		margin: 0 0 30px; //reset normalize h1
 	}
-
 	&__text {
 		max-width: 487px;
 		margin: 0 0 45px;
 		font-family: $font-family-secondary;
 		@include font(1.8rem, 2.8rem, normal)
 	}
-
 	&__buttons {
 		& > * {
 			margin-right: 44px;
 		}
 	}
-}
-
-.title {
-}
-
-.text {
-}
-
-.button {
-}
-
-.button--colored {
-}
-
-.link-button {
-}
-
-.icon {
-}
-
-.icon--play {
 }

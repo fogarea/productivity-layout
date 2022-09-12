@@ -11,18 +11,27 @@
 	border-radius: 90px;
 	padding: 0 14px;
 	@include font(1.3rem, 2.8rem, normal);
-
+	cursor: pointer;
 	&--bordered {
 		border: 1px solid $color-border-btn;
+		&:hover {
+			background-color: $color-tag;
+		}
 	}
 
 	&--selected {
 		background-color: $color-primary;
 		border: 1px solid $color-primary;
 		color: $color-light;
+		&:hover {
+			background-color: $color-primary;
+			border: 1px solid $color-primary;
+			color: $color-light;
+		}
 	}
 
 	&--colored {
 		background-color: $color-tag;
+		padding: 6px 14px;
 	}
 }

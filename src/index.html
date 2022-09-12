@@ -159,28 +159,28 @@
                 <div class="wrapper">
                     <h2 class="about__title title">About Us</h2>
                     <p class="about__desc">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
-                    <div class="about__content layout-3-columns">
-                        <div class="employee block-shadow">
+                    <div class="about__content layout-3-columns employee__wrapper">
+                        <div class="employee">
                             <div class="employee__content">
-                                <h5 class="employee__title">Kathy Rosenberg</h5>
+                                <strong class="employee__title">Kathy Rosenberg</strong>
                                 <p class="employee__job-title">Product Manager</p>
                                 <a class="employee__mail" href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
                             </div>
                             <img class="employee__img" src="./assets/img/employers/kathy.jpg" alt="Employee Photo">
                         </div>
 
-                        <div class="employee block-shadow">
+                        <div class="employee">
                             <div class="employee__content">
-                                <h5 class="employee__title">Alexandra Boyarskaya</h5>
+                                <strong class="employee__title">Alexandra Boyarskaya</strong>
                                 <p class="employee__job-title">Support Marketing Specialist</p>
                                 <a class="employee__mail" href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
                             </div>
                             <img class="employee__img" src="./assets/img/employers/alexandra.jpg" alt="Employee Photo">
                         </div>
 
-                        <div class="employee block-shadow">
+                        <div class="employee">
                             <div class="employee__content">
-                                <h5 class="employee__title">Melani Amini</h5>
+                                <strong class="employee__title">Melani Amini</strong>
                                 <p class="employee__job-title">Photographer</p>
                                 <a class="employee__mail" href="mailto:melania@gmail.com">melania@gmail.com</a>
                             </div>
@@ -198,26 +198,30 @@
                             <p class="contact__desc">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
                             <div class="contact__info info-contact">
                                 <div class="info-contact__phone">
-                                    <span class="icon icon--phone"></span>
+                                    <div class="icon-circle icon-circle--colored">
+                                        <span class="icon icon--phone"></span>
+                                    </div>
                                     <a href="tel:+375223450099" class="info-contact__phone-link">+375 (22) 345-00-99</a>
                                 </div>
                                 <div class="info-contact__mail">
-                                    <span class="icon icon--mail"></span>
+                                    <div class="icon-circle icon-circle--colored">
+                                        <span class="icon icon--mail"></span>
+                                    </div>
                                     <a href="mailto:emailname@gmail.com" class="info-contact__mail-link">emailname@gmail.com</a>
                                 </div>
                             </div>
                         </div>
                         <div class="contact__form">
                             <form action method="post">
-                                <div class="layout-2-columns">
+                                <div class="layout-2-columns contact__line">
                                     <input type="text" name="name" placeholder="Your name">
                                     <input type="email" name="email" placeholder="Your email">
                                 </div>
-                                <textarea name="question" cols="30" rows="10"></textarea>
+                                <textarea class="contact__line" name="question" cols="30" rows="10" placeholder="What do you want to ask?"></textarea>
+                                <div class="contact__button">
+                                    <button class="button button--colored" type="submit">Send</button>
+                                </div>
                             </form>
-                        </div>
-                        <div class="contact__button">
-                            <button class="button button--colored" type="submit">Send</button>
                         </div>
                     </div>
                 </div>
@@ -225,9 +229,27 @@
         </main>
 
         <footer class="footer">
-            <div class="wrapper">
-                <div class="footer__content layout-4-columns">
-                    <a href="#" class="header__logo logo">Productivity</a>
+            <div class="wrapper footer__wrapper">
+                <a href="#" class="header__logo"><img src="./assets/svg/logo.svg" alt="Productivity Logo"></a>
+                <div class="footer__content layout-3-columns">
+                    <div class="footer__nav">
+                        <h4 class="footer__title">Quick Links</h4>
+                        <ul class="footer__nav__links">
+                            <li class="footer__nav__link"><a href="#">About Us</a></li>
+                            <li class="footer__nav__link"><a href="#">Blog</a></li>
+                            <li class="footer__nav__link"><a href="#">Contact</a></li>
+                            <li class="footer__nav__link"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav">
+                        <h4 class="footer__title">Legal Stuff</h4>
+                        <ul class="footer__nav__links">
+                            <li class="footer__nav__link"><a href="#">Disclaimer</a></li>
+                            <li class="footer__nav__link"><a href="#">Financing</a></li>
+                            <li class="footer__nav__link"><a href="#">Privacy Policy</a></li>
+                            <li class="footer__nav__link"><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
                     <div class="footer__nav">
                         <h4 class="footer__title">Quick Links</h4>
                         <ul class="footer__nav__links">

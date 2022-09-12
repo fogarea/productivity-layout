@@ -1,0 +1,33 @@
+@use "../abstract" as *;
+
+.footer {
+	padding: 60px 70px;
+	&__wrapper {
+		display: flex;
+	}
+
+	&__content {
+		flex-grow: 1;
+		margin-left: 152px;
+	}
+
+	&__nav {
+
+		&__link {
+			font-family: $font-family-secondary;
+			@include font(1.6rem, 3.5rem, normal);
+			@extend %transition;
+			a {
+				text-decoration: none;
+				color: $color-text;
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+
+	&__title {
+		margin: 0 0 15px;
+	}
+}
