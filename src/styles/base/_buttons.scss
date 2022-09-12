@@ -41,3 +41,24 @@
 		margin-left: 9px;
 	}
 }
+
+.open-btn,
+.close-btn {
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+
+	@include media-laptop {
+		display: inline-flex;
+		color: $color-primary;
+		background-color: inherit;
+	}
+}
+
+.close-btn {
+	@include media-laptop {
+		position: absolute;
+		top: 40px;
+		right: 60px;
+	}
+}

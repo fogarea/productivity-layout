@@ -9,10 +9,10 @@
 	&__content {
 		flex-grow: 1;
 		margin-left: 152px;
+
 	}
 
 	&__nav {
-
 		&__link {
 			font-family: $font-family-secondary;
 			@include font(1.6rem, 3.5rem, normal);
