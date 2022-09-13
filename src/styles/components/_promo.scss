@@ -7,11 +7,19 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@include media-mobile-big {
+			flex-direction: column-reverse;
+		}
 	}
 	&__content {
 		padding-right: 65px;
 		@include media-tablet {
 			padding-right: 0;
+		}
+
+		@include media-mobile-big {
+			text-align: center;
 		}
 	}
 	&__title {
@@ -26,6 +34,10 @@
 		@include media-tablet {
 			width: 360px;
 		}
+
+		@include media-mobile-big {
+			width: auto;
+		}
 	}
 	&__buttons {
 		display: flex;
@@ -36,6 +48,21 @@
 			&:last-child {
 				margin-right: 0;
 			}
+		}
+
+		@include media-mobile-big {
+			flex-direction: column;
+
+			& > * {
+				margin: 0 0 26px 0;
+			}
+		}
+	}
+
+	&__img {
+		@include media-mobile-big {
+			max-width: 100%;
+			margin-bottom: 16px;
 		}
 	}
 }

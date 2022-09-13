@@ -1,27 +1,59 @@
+@use "../abstract" as *;
+
 .tools {
 	&__wrapper {
 		padding-bottom: 90px;
 		background: url("./../assets/img/tools/tools-bg.png") no-repeat center bottom;
 		background-size: 100%;
+		@include media-tablet {
+			padding-bottom: 30px;
+		}
+		@include media-mobile-big {
+			padding-bottom: 30px;
+		}
+	}
+	&__content {
+		> .tool {
+			@include media-tablet {
+				flex-basis: 43%;
+			}
+			@include media-mobile-big {
+				flex-basis: 100%;
+				margin-bottom: 30px;
+			}
+		}
 	}
 	&__title {
 		max-width: 462px;
 		margin: 0 auto;
 		text-align: center;
 		margin-bottom: 70px;
+		@include media-mobile-big {
+			margin: 0 0 30px;
+		}
 	}
 	&__button {
 		margin-top: 60px;
 		text-align: center;
+		@include media-mobile-big {
+			margin-top: 0;
+		}
 	}
 }
 
 .tool {
+	flex-wrap: wrap;
 	&__icon {
 		margin: 0 0 30px;
 	}
 
 	&__title {
 		margin: 0 0 16px;
+	}
+	&__text {
+		margin: 0 0 20px;
+	}
+	@include media-tablet {
+		text-align: center;
 	}
 }

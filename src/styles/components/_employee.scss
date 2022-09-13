@@ -8,6 +8,14 @@ $employee-card-gap: 32px;
 	padding: 35px;
 	width: calc(30% - $employee-card-gap);
 	position: relative;
+	@include media-tablet {
+		width: calc(60% - $employee-card-gap);
+		align-self: center;
+	}
+	@include media-mobile-big {
+		width: calc(96% - $employee-card-gap);
+		padding: 30px 20px;
+	}
 	&__job-title {
 		@include font(1.4rem, $weight: normal, $height: 2.6rem);
 	}
@@ -32,4 +40,11 @@ $employee-card-gap: 32px;
 
 .employee__wrapper {
 	padding-right: $employee-card-gap;
+	@include media-tablet {
+		flex-direction: column;
+		text-align: left;
+	}
+	@include media-mobile-big {
+		padding-right: 0;
+	}
 }

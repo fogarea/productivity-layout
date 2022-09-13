@@ -21,15 +21,42 @@
 		resize: none;
 		width: 100%;
 		height: 160px;
+		@include media-mobile-big {
+			margin-bottom: 19px;
+		}
 	}
 	&__title {
 		margin: 0 0 17px;
 	}
 	&__desc {
 		margin: 0 0 59px;
+		@include media-tablet {
+			margin: 0 0 26px;
+		}
 	}
 	&__line {
 		margin-bottom: 19px;
+		@include media-mobile-big {
+			flex-direction: column;
+			margin-bottom: 0;
+			>* {
+				margin-bottom: 19px;
+			}
+		}
+	}
+
+	@include media-tablet {
+		text-align: center;
+		padding: 30px 46px;
+	}
+	@include media-mobile-big {
+		padding: 32px 0 ;
+	}
+}
+
+.contact__container {
+	@include media-tablet {
+		flex-direction: column;
 	}
 }
 
@@ -51,6 +78,9 @@
 		color: #544837;
 		&:hover {
 			text-decoration: underline;
+		}
+		@include media-tablet {
+			@include font(1.6rem, 2.6rem, 400);
 		}
 	}
 }
