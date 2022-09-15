@@ -3,6 +3,21 @@
 .contact {
 	background: $color-bg;
 	padding: 62px 82px;
+	@include media-laptop {
+		&__name {
+			margin-bottom: 19px;
+		}
+	}
+	@include media-tablet {
+		text-align: center;
+		padding: 30px 46px;
+		&__name {
+			margin-bottom: 0;
+		}
+	}
+	@include media-mobile-big {
+		padding: 32px 0 ;
+	}
 	input, textarea {
 		border: none;
 		background-color: $color-light;
@@ -45,13 +60,7 @@
 		}
 	}
 
-	@include media-tablet {
-		text-align: center;
-		padding: 30px 46px;
-	}
-	@include media-mobile-big {
-		padding: 32px 0 ;
-	}
+
 }
 
 .contact__container {
